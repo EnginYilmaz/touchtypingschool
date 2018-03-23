@@ -1,0 +1,17 @@
+<widget id="com.tts.tutorial" version="8.0.5">
+<icon src="grafikler/tts-logo-last.gif" />
+<name>Touch Typing School</name>
+<description>
+Touch typing tutorial application for the tablets with pyhsical keyboards
+</description>
+<author href="http://touchtypingschool.com" email="engnyy@gmail.com">
+Engin YILMAZ
+</author>
+<content src="index.html" />
+<access origin="*" />
+<preference name="HideKeyboardFormAccessoryBar" value="true"/>
+<preference name="Fullscreen" value="true" />
+<preference name="WebViewBounce" value="true" />
+<preference name="Orientation" value="landscape" />
+<preference name="Fullscreen" value="true" />
+</widget>

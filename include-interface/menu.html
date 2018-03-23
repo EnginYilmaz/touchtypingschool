@@ -1,0 +1,36 @@
+<script>
+//menu dugmeleri mevcut mu degilse ingilizce olan dugmelerden sec. bunu yapmak icin logout dugmesi varmi
+// rasgele secim ile kontrol et eger logout dugmesi var ise hepsi vardir diye kabulde bulun.
+// ayrica na su anki hali ile ingilizce ve turkce disinde eksikler oldugu icin turkce haric tum diller
+// ingilizce menu dugmeleri olarak basilacaktir.
+file = "./grafikler/menu-dugmeleri/cikis-bd-";
+if ( file_exists(file+klavye_lang+".jpg")) {
+	klavye_lang_btn = klavye_lang;
+} else {
+	klavye_lang_btn = "en_q";
+}
+
+//turkce f ise q ya donus yap
+if ( klavye_lang == "tr_f" ) {
+	klavye_lang_btn = "tr_q";
+}
+
+if ( provider == "" || provider == "plain" ) {
+  provider ="plain";
+  profile_x = "onparmak.html";
+} else {
+  profile_x = "profile.html";
+}
+  ogrencipanel= "<a href=\"ogrenci_panel.html?provider="+provider+"\"><img name=\"ogrencipanel\" border=\"0\" src=\"grafikler/menu-dugmeleri/ogrencipanel-bd-"+klavye_lang_btn+".jpg\" onMouseOver=\"javascript:fareaksiyon(this,'ogrencipanel-fu-"+klavye_lang_btn+".jpg');\" onMouseOut=\"javascript:fareaksiyon(this,'ogrencipanel-bd-"+klavye_lang_btn+".jpg');\" onClick=\"javascript:fareaksiyon(this,'ogrencipanel-b-"+klavye_lang_btn+".jpg');\"></a>";
+  klavye_oku = "<a href=\"klavye_oku.html?provider="+provider+"&layout="+klavye_lang+"\">";
+}
+</script>
+<tr>
+  <td class="menulistesi" bgcolor="#FFFFFF">
+    <script>document.write(klavye_oku);</script>
+    <img name="ayarlar" border="0" src="grafikler/menu-dugmeleri/ayarlar-bd-abc.jpg" onMouseOver="javascript:fareaksiyon(this,'ayarlar-fu-abc.jpg');" onClick="javascript:fareaksiyon(this,'ayarlar-b-abc.jpg');" onMouseOut="javascript:fareaksiyon(this,'ayarlar-bd-abc.jpg');"></a>&nbsp;&nbsp;
+    <a href=""><img name="antreman" border="0" src="grafikler/menu-dugmeleri/antreman-bd-abc.jpg" onMouseOver="javascript:fareaksiyon(this,'antreman-fu-abc.jpg');" onClick="javascript:fareaksiyon(this,'antreman-b-abc.jpg');" onMouseOut="javascript:fareaksiyon(this,'antreman-bd-abc.jpg');"></a>&nbsp;&nbsp;
+    <a href=""><img name="antreman" border="0" src="grafikler/menu-dugmeleri/numpadantreman-bd-abc.jpg" onMouseOver="javascript:fareaksiyon(this,'numpadantreman-fu-abc.jpg');" onMouseOut="javascript:fareaksiyon(this,'numpadantreman-bd-abc.jpg');" onClick="javascript:fareaksiyon(this,'numpadantreman-b-abc.jpg');"></a>
+    <a href=\"".logout_url."\"><img name=\"cikis\" border=\"0\" src=\"grafikler/menu-dugmeleri/cikis-bd-".klavye_lang_btn.".jpg\" onMouseOver=\"javascript:fareaksiyon(this,'cikis-fu-".klavye_lang_btn.".jpg');\" onMouseOut=\"javascript:fareaksiyon(this,'cikis-bd-".klavye_lang_btn.".jpg');\" onClick=\"javascript:fareaksiyon(this,'cikis-b-".klavye_lang_btn.".jpg');\"></a>";
+  </td>
+</tr>

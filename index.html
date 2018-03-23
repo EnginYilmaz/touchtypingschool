@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, target-densityDpi=device-dpi" />
+<script type="text/javascript">
+secilidil= localStorage.getItem("secilidil");
+if (secilidil== "" || secilidil==null) secilidil = "en_q";
+document.write("<script type='text/javascript' src='./diller/lib_dil/l_"+secilidil+".js'><\/script>");
+document.write("<script type='text/javascript' src='./diller/ders/d_"+secilidil+".js'><\/script>");
+document.write("<script type='text/javascript' src='./diller/sahne/s_"+secilidil+".js'><\/script>");
+//document.write("<script type='text/javascript' src='onparmak.js'><\/script>");
+</script>
+
+<script src="onparmak.js"></script>
+<script src="rekor-yaz.js"></script>
+<script type="text/javascript">
+  document.onkeydown = function (e) {
+    if (e.which == 8) {
+      return false;
+    }
+  }
+  var profil_gorunen_ad= "Student";
+  var profil_resim="";
+  if (profil_resim == "" ) profil_resim="grafikler/tts-logo-last.png";
+
+  function secilidil_degistir(secilidil){
+    localStorage.setItem("secilidil",secilidil);
+    location.reload(); 
+  }
+  
+  var gelen_ad= "demo_user"
+  var gelen_sifre="1234";
+
+  var ad= localStorage.getItem('ad');
+  if (ad==null) ad= gelen_ad;
+
+  var numpad_ders_no= localStorage.getItem('numpad_ders_no');
+  if (numpad_ders_no == null) numpad_ders_no = 1;
+
+  var ders_no= localStorage.getItem('ders_no');
+  if (ders_no == null) ders_no = 1;
+
+  var numpad_ders_no= localStorage.getItem('numpad_ders_no');
+  if (numpad_ders_no == null) numpad_ders_no = 1;
+
+  var klavye_turu = localStorage.getItem('klavye_turu');
+  if (klavye_turu == null) klavye_turu = "en_q";
+
+  var arayuz_dili = localStorage.getItem('arayuz_dili');
+  if (arayuz_dili == null) arayuz_dili = "en_q";
+
+  var gorunenad = localStorage.getItem('gorunenad');
+  if (arayuz_dili == null) arayuz_dili = ad;
+
+  var sonders= ders_no;
+  if (seciliders==null) seciliders= sonders;
+  
+  function klavye_sahneye() {
+		document.getElementById('sahne').innerHTML=sahne_bas();
+		dersler_menusu_olustur(sonders);
+		dil_secim_listesi_secili_dil();
+    sifirlandi= true;
+    if (sonders <=1)sonders=1;
+    var str_fonksiyon;
+    str_fonksiyon= "yeni_ders("+sonders+")";
+        	window.setTimeout(str_fonksiyon, 1000);
+  }
+  
+  function fareaksiyon(nesne,resim){
+      nesne.src="grafikler/menu-dugmeleri/"+resim;
+  }
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="grafikler/klavye.css">
+</head>
+  <body bgcolor="#CCCCCC" onLoad="klavye_sahneye();">
+<table border="1">
+      <td colspan="4" bgcolor="#FFFFFF">
+      <div id="sahne">&nbsp;</div>
+      </td>
+    </tr>
+  </td></tr></table>
+  </body>
+</html>

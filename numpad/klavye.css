@@ -1,0 +1,199 @@
+root { 
+    display: block;
+    background-color: orange;
+	background:#FFC
+}
+table.klavye {
+    background-color: #000000;
+    color: white;
+    border-style:none;
+    
+    border-top-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+}
+table.skorbord {
+background:#F93
+}
+td.giris1 {
+        border-style:hidden;
+        border-spacing:0px;
+        border-right: 0;
+        border-right-width:0;
+}
+td.giris2 {
+        border-style:hidden;
+        border-spacing:0px;
+        border-right: 0;
+        border-right-width:0;
+        border-bottom: 0;
+        border-bottom-width: 0;
+        vertical-align: bottom;
+}
+td.giris3 {
+        border-style:hidden;
+        border-spacing:0px;
+        border-left: 0;
+        border-left-width:0;
+	    vertical-align: top;
+}
+input.giris1 {
+    height: 30px;
+    width: 15px;
+    background-color: black;
+    color: white;
+    border-right-style: hidden;
+	border-right-color:#000;
+    vertical-align:top;
+    text-align:right;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.giris2 {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    text-align: left;
+    vertical-align:top;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.giris3 {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    border-top-style: hidden;
+    border-top-color:#000
+    text-align: left;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.backspace {
+    width: 64px;
+    height: 30px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.sekme {
+    width: 50px;
+    height: 30px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.F {
+    width: 30px;
+    height: 20px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.capslock {
+    width: 64px;
+    height: 30px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.sol_shift {
+    width: 45px;
+    height: 30px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.sag_shift {
+    height: 30px;
+    width: 79px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.standart {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.kontrol {
+    width: 43px;
+    height: 30px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.space {
+    width: 196px;
+    height: 30px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.okumafis {
+    font-family: monospace;
+    color:white;
+    background-color:black;
+    width: 700px;
+    background-image: url("../grafikler/standart-bg.png");
+}
+
+input.yazmafis {
+    font-family: monospace;
+    background-color:orange;
+    width: 700px;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.disabled {
+  color:highlight;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.ders {
+    color: blue;
+    background-color: blue;
+    font-style: italic;
+    background-image: url("../grafikler/standart-bg.png");
+}
+
+.yazmafisi_satirsonu {
+    text-decoration: blink;
+    color: #d1d1d1;
+    background-image: url("../grafikler/standart-bg.png");
+}
+.ayarlar_sekmesi {
+    height:400px;
+    background-image: url(http://www.kalemkutu.com/onparmak/grafik-demo/dunya.jpg);;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    text-align: center;
+    background-image: url("../grafikler/standart-bg.png");
+}
+
+input.uzuntus {
+    width: 30px;
+    height: 62px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
+input.genistus {
+    width: 62px;
+    height: 30px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    background-image: url("../grafikler/standart-bg.png");
+}
