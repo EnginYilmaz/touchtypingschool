@@ -14,3 +14,6 @@ It should run on any Operating System
 
 #Kurulum
 Dosyayı bilgisayarınıza kopyalayın ve zipli dosyaları bir klasöre açın sonra index.html dosyasını favori internet tarayıcınızla açın. En iyi Google Chrome ile çalışır.
+
+#Sistem Gereksinimleri
+Her işletim sisteminde çalışması beklenir.
